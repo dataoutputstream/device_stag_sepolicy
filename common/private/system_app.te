@@ -8,3 +8,6 @@ hal_client_domain(system_app, hal_lineage_livedisplay)
 #Allow set Theme
 allow system_app theme_prop:property_service { set };
 allow system_app theme_prop:file { read open getattr };    
+
+# Allow access to the touch HAL
+hal_client_domain(system_app, hal_lineage_touch)

@@ -8,6 +8,7 @@ hal_client_domain(system_server, hal_lineage_livedisplay)
 
 # Use HALs
 hal_client_domain(system_server, hal_lineage_fod)
+hal_client_domain(system_server, hal_lineage_touch)
 
 # Long screenshot
 add_service(system_server, longshot_service)
