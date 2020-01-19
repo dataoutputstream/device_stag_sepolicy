@@ -2,4 +2,3 @@ adb.secure                    u:object_r:recovery_prop:s0
 recovery.perf.mode            u:object_r:recovery_prop:s0
 sys.refresh_theme             u:object_r:theme_prop:s0
 
-
