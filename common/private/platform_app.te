@@ -14,3 +14,6 @@ hal_client_domain(platform_app, hal_lineage_livedisplay)
 
 # Allow FOD HAL service to be found
 hal_client_domain(platform_app, hal_lineage_fod)
+
+# RGB 
+allow platform_app theme_prop:file { read open getattr };

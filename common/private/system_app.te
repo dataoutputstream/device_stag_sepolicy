@@ -4,3 +4,7 @@ allow system_app cache_recovery_file:file {create rw_file_perms};
 
 # LiveDisplay
 hal_client_domain(system_app, hal_lineage_livedisplay)
+
+#Allow set Theme
+allow system_app theme_prop:property_service { set };
+allow system_app theme_prop:file { read open getattr };    
