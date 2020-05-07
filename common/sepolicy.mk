@@ -1,7 +1,7 @@
 #
 # This policy configuration will be used by all products that
 # inherit from Stag-OS
-#
+
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
 ifeq ($(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE),)
@@ -23,3 +23,4 @@ BOARD_SEPOLICY_DIRS += \
     device/stag/sepolicy/common/dynamic \
     device/stag/sepolicy/common/vendor
 endif
+

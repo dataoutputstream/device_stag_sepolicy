@@ -9,6 +9,3 @@ allow hal_lineage_livedisplay_default display_vendor_data_file:file create_file_
 
 # Allow LiveDisplay to access vendor display property
 get_prop(hal_lineage_livedisplay_default, vendor_display_prop)
-
-# Allow LiveDisplay to access pps socket
-unix_socket_connect(hal_lineage_livedisplay_default, pps, mm-pp-daemon)

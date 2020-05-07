@@ -13,3 +13,6 @@ set_prop(system_app, theme_prop)
 
 # Allow access to the touch HAL
 hal_client_domain(system_app, hal_lineage_touch)
+
+# Read selinux status
+allow system_app selinuxfs:file r_file_perms;

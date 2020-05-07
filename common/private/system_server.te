@@ -1,3 +1,4 @@
+
 allow system_server storage_stub_file:dir getattr;
 
 # Allow LineageHW (running as system server) to access LiveDisplay tuneables
@@ -16,3 +17,8 @@ add_service(system_server, longshot_service)
 # theme property
 get_prop(system_server, theme_prop)
 set_prop(system_server, theme_prop)
+
+allow system_server storage_stub_file:dir getattr;
+
+
+set_prop(system_server, shell_prop)
